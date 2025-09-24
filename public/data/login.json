@@ -1,0 +1,167 @@
+{
+    "JHeader": {
+        "ActionCode": 1,
+        "Message": "Request is parsed and response is generated successfully",
+        "SysVersion": "1.0.0"
+    },
+    "JMetaData": {
+        "Headings": [
+            [
+                "p_APP_NAME",
+                "App Name"
+            ],
+            [
+                "p_DEVICE_TYPE",
+                "Device Type"
+            ],
+            [
+                "p_VIEW_JSON",
+                "View JSON"
+            ]
+        ]
+    },
+    "JData": [
+        [
+            "DriverApp",
+            "M",
+            [
+                {
+                    "viewNumber": "001",
+                    "viewName": "LoginScreen",
+                    "viewOrder": 1,
+                    "title": "Login",
+                    "heading": "Access Your Account",
+                    "headingText": "Sign in to access your account, manage rides, and start earning.",
+                    "lastUpdatedAt": "2025-09-23T10:30:00Z",
+                    "objects": [
+                        {
+                            "uiId": "txtCompanyId",
+                            "uiType": "text",
+                            "uiName": "txtCompanyId",
+                            "order": 1,
+                            "label": "Company ID",
+                            "placeholder": "Enter your company ID",
+                            "tooltip": "Your company ID",
+                            "minLength": 3,
+                            "maxLength": 20,
+                            "allowedCharacters": "a-z,A-Z,0-9,_,-",
+                            "regularExpression": "^[A-Za-z0-9_-]{3,20}$",
+                            "validationFunction": "validateCompanyID",
+                            "isMandatory": false,
+                            "isReadOnly": false,
+                            "defaultValue": "",
+                            "errorMessages": {
+                                "Invalid": "Invalid Company ID format",
+                                "TooShort": "Company ID must be at least 3 characters"
+                            }
+                        },
+                        {
+                            "uiId": "txtLogin",
+                            "uiType": "text",
+                            "uiName": "txtLogin",
+                            "order": 2,
+                            "label": "Login ID",
+                            "placeholder": "Enter your login ID",
+                            "tooltip": "Your registered login ID",
+                            "minLength": 3,
+                            "maxLength": 254,
+                            "allowedCharacters": "a-z,A-Z,0-9,.,_,-,@,+",
+                            "regularExpression": "^[A-Za-z0-9._@+-]{3,254}$",
+                            "validationFunction": "validateLoginID",
+                            "isMandatory": true,
+                            "isReadOnly": false,
+                            "defaultValue": "",
+                            "errorMessages": {
+                                "Required": "Login ID is required",
+                                "Invalid": "Invalid Login ID format"
+                            }
+                        },
+                        {
+                            "uiId": "txtPassword",
+                            "uiType": "text",
+                            "uiName": "txtPassword",
+                            "order": 3,
+                            "label": "Password",
+                            "placeholder": "Enter your password",
+                            "tooltip": "At least one lower case letter, one upper case letter, one digit, and one special character",
+                            "minLength": 8,
+                            "maxLength": 16,
+                            "allowedCharacters": "a-z,A-Z,0-9,!,@,#,$,%,^,&,*,(,),_,-,+,=",
+                            "regularExpression": "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_\\-+=]).{8,16}$",
+                            "validationFunction": "validatePassword",
+                            "isMandatory": true,
+                            "isReadOnly": false,
+                            "defaultValue": "",
+                            "errorMessages": {
+                                "Required": "Password is required",
+                                "Invalid": "Invalid Password format."
+                            }
+                        },
+                        {
+                            "uiId": "lnkForgotPassword",
+                            "uiType": "link",
+                            "uiName": "lnkForgotPassword",
+                            "order": 4,
+                            "label": "Forgot Password?",
+                            "target": "/forgot-password"
+                        },
+                        {
+                            "uiId": "btnSubmit",
+                            "uiType": "button",
+                            "uiName": "btnSubmit",
+                            "order": 5,
+                            "label": "Sign In",
+                            "target": ""
+                        },
+                        {
+                            "uiId": "lblSeparator",
+                            "uiType": "label",
+                            "uiName": "lblSeparator",
+                            "order": 6,
+                            "label": "Or"
+                        },
+                        {
+                            "uiId": "imgFingerprint",
+                            "uiType": "image",
+                            "uiName": "imgFingerprint",
+                            "order": 7,
+                            "label": "Fingerprint",
+                            "target": ""
+                        },
+                        {
+                            "uiId": "imgFaceId",
+                            "uiType": "image",
+                            "uiName": "imgFaceId",
+                            "order": 8,
+                            "label": "Face ID",
+                            "target": ""
+                        },
+                        {
+                            "uiId": "imgFaceRecognition",
+                            "uiType": "image",
+                            "uiName": "imgFaceRecognition",
+                            "order": 9,
+                            "label": "Face Recognition",
+                            "target": ""
+                        },
+                        {
+                            "uiId": "lblSignupText",
+                            "uiType": "label",
+                            "uiName": "lblSignupText",
+                            "order": 10,
+                            "label": "Don't have an account?"
+                        },
+                        {
+                            "uiId": "btnRequestRegistration",
+                            "uiType": "button",
+                            "uiName": "btnRequestRegistration",
+                            "order": 11,
+                            "label": "Request Registration",
+                            "target": "https://m.blinkride.com/signup"
+                        }
+                    ]
+                }
+            ]
+        ]
+    ]
+}

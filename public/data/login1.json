@@ -1,0 +1,43 @@
+{
+  "JHeader": {
+      "ActionCode": 1,
+      "Message": "Request is parsed and response is generated successfully",
+      "SysVersion": "1.0.0"
+  },
+  "JMetaData": {
+      "Headings": [
+          [
+              "p_APP_NAME",
+              "App Name"
+          ],
+          [
+              "p_DEVICE_TYPE",
+              "Device Type"
+          ],
+          [
+              "p_VIEW_JSON",
+              "View JSON"
+          ]
+      ]
+  },
+  "JData": [
+      [
+          "DriverApp",
+          "M",
+          [
+              {
+                  "viewNumber": "001",
+                  "viewName": "LoginScreen",
+                  "viewOrder": 1,
+                  "title": "",
+                  "heading": "",
+                  "headingText": "",
+                  "lastUpdatedAt": "2025-09-23T10:30:00Z",
+                  "objects": [
+                      
+                  ]
+              }
+          ]
+      ]
+  ]
+}
